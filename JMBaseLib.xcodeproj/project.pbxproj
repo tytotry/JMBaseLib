@@ -74,6 +74,7 @@
 		66959A492089718B003D4733 /* JMBaseLib */ = {
 			isa = PBXGroup;
 			children = (
+				66959A62208976E9003D4733 /* JMTest.swift */,
 				66959A61208976C9003D4733 /* Lib */,
 				66959A4A2089718B003D4733 /* JMBaseLib.h */,
 				66959A4B2089718B003D4733 /* Info.plist */,
@@ -93,7 +94,6 @@
 		66959A61208976C9003D4733 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				66959A62208976E9003D4733 /* JMTest.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";

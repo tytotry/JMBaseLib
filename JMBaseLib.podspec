@@ -92,9 +92,9 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "JMBaseLib", "JMBaseLib/**/*.{h,m}"
-  s.exclude_files = "JMBaseLib/Exclude"
+  # s.exclude_files = "JMBaseLib/Exclude"
 
-  s.public_header_files = "JMBaseLib/**/*.h"
+  # s.public_header_files = "JMBaseLib/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
