@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JMBaseLib", "JMBaseLib/**/*.{h,m}"
+  s.source_files  = "JMBaseLib", "JMBaseLib/**/*.{swift}"
   # s.exclude_files = "JMBaseLib/Exclude"
 
   # s.public_header_files = "JMBaseLib/**/*.h"
@@ -134,5 +134,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+  s.swift_version = '4.0'
 
 end
