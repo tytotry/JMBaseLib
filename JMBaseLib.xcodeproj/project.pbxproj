@@ -10,10 +10,11 @@
 		0AEEE4DB3359EA2351B6453D /* Pods_JMBaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E13F93B94259A64E95C6D4 /* Pods_JMBaseLib.framework */; };
 		66959A512089718B003D4733 /* JMBaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66959A472089718B003D4733 /* JMBaseLib.framework */; };
 		66959A562089718B003D4733 /* JMBaseLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66959A552089718B003D4733 /* JMBaseLibTests.swift */; };
-		66959A582089718B003D4733 /* JMBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 66959A4A2089718B003D4733 /* JMBaseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66959A582089718B003D4733 /* JMBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 66959A4A2089718B003D4733 /* JMBaseLib.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		66959A63208976E9003D4733 /* JMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66959A62208976E9003D4733 /* JMTest.swift */; };
 		66959A6420897739003D4733 /* JMTest.swift in Headers */ = {isa = PBXBuildFile; fileRef = 66959A62208976E9003D4733 /* JMTest.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		66959AAC2089B4E0003D4733 /* JMRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66959AAB2089B4E0003D4733 /* JMRequestManager.swift */; };
+		66CDB653208ECF380020AF3F /* JMRequestManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 66959AAB2089B4E0003D4733 /* JMRequestManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA02B80E950CF11F47FA770F /* Pods_JMBaseLibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D86307B1AD7FDDDB354F223 /* Pods_JMBaseLibTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,8 +157,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66959A582089718B003D4733 /* JMBaseLib.h in Headers */,
 				66959A6420897739003D4733 /* JMTest.swift in Headers */,
+				66CDB653208ECF380020AF3F /* JMRequestManager.swift in Headers */,
+				66959A582089718B003D4733 /* JMBaseLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +490,11 @@
 				INFOPLIST_FILE = JMBaseLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -513,7 +519,11 @@
 				INFOPLIST_FILE = JMBaseLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -530,7 +540,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNG24H8Q82;
 				INFOPLIST_FILE = JMBaseLibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLibTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -546,7 +560,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNG24H8Q82;
 				INFOPLIST_FILE = JMBaseLibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLibTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
