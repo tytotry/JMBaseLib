@@ -33,4 +33,24 @@ class JMBaseLibTests: XCTestCase {
         }
     }
     
+    func testRequest() {
+        let expect = self.expectation(description: "expe")
+        
+        self.measure {
+            JMRequestManager().myRequestWithNoneSuccessIdentifyWithUnknownObject(join("http://192.168.0.69:8080", path: "/admin/api/user/login"), method: .post, parameters: ["loginname": "superadmin", "password" : "0"], success: { (response) in
+                print("success")
+                let res = response as! [String: Any];
+                XCTAssert(res["success"] != nil, "success")
+                expect.fulfill()
+            }, failure: { (error) in
+                XCTAssertNotNil(error, "asdf")
+                expect.fulfill()
+            }, complete: {
+                print("complete")
+            })  
+        }
+        self.waitForExpectations(timeout: 10, handler: { (error) in
+            print(error?.localizedDescription ?? "")
+        })
+    }
 }

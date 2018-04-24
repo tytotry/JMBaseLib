@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AEEE4DB3359EA2351B6453D /* Pods_JMBaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E13F93B94259A64E95C6D4 /* Pods_JMBaseLib.framework */; };
 		66959A512089718B003D4733 /* JMBaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66959A472089718B003D4733 /* JMBaseLib.framework */; };
 		66959A562089718B003D4733 /* JMBaseLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66959A552089718B003D4733 /* JMBaseLibTests.swift */; };
 		66959A582089718B003D4733 /* JMBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 66959A4A2089718B003D4733 /* JMBaseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66959A63208976E9003D4733 /* JMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66959A62208976E9003D4733 /* JMTest.swift */; };
 		66959A6420897739003D4733 /* JMTest.swift in Headers */ = {isa = PBXBuildFile; fileRef = 66959A62208976E9003D4733 /* JMTest.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		66959AAC2089B4E0003D4733 /* JMRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66959AAB2089B4E0003D4733 /* JMRequestManager.swift */; };
+		EA02B80E950CF11F47FA770F /* Pods_JMBaseLibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D86307B1AD7FDDDB354F223 /* Pods_JMBaseLibTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,13 @@
 		66959A552089718B003D4733 /* JMBaseLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBaseLibTests.swift; sourceTree = "<group>"; };
 		66959A572089718B003D4733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66959A62208976E9003D4733 /* JMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMTest.swift; sourceTree = "<group>"; };
+		66959AAB2089B4E0003D4733 /* JMRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMRequestManager.swift; sourceTree = "<group>"; };
+		70E13F93B94259A64E95C6D4 /* Pods_JMBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BE6D786E378148E44DB409 /* Pods-JMBaseLibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMBaseLibTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JMBaseLibTests/Pods-JMBaseLibTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D86307B1AD7FDDDB354F223 /* Pods_JMBaseLibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMBaseLibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1672C291EB5A2E2C9EF3FBB /* Pods-JMBaseLibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMBaseLibTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMBaseLibTests/Pods-JMBaseLibTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA8734AD72A6200A85D86916 /* Pods-JMBaseLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMBaseLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-JMBaseLib/Pods-JMBaseLib.release.xcconfig"; sourceTree = "<group>"; };
+		F45B31EF73E010A83B3EDE2D /* Pods-JMBaseLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMBaseLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMBaseLib/Pods-JMBaseLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEEE4DB3359EA2351B6453D /* Pods_JMBaseLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,18 +58,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				66959A512089718B003D4733 /* JMBaseLib.framework in Frameworks */,
+				EA02B80E950CF11F47FA770F /* Pods_JMBaseLibTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		351674E48C473A53F1870CE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F45B31EF73E010A83B3EDE2D /* Pods-JMBaseLib.debug.xcconfig */,
+				EA8734AD72A6200A85D86916 /* Pods-JMBaseLib.release.xcconfig */,
+				C1672C291EB5A2E2C9EF3FBB /* Pods-JMBaseLibTests.debug.xcconfig */,
+				95BE6D786E378148E44DB409 /* Pods-JMBaseLibTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		66959A3D2089718B003D4733 = {
 			isa = PBXGroup;
 			children = (
 				66959A492089718B003D4733 /* JMBaseLib */,
 				66959A542089718B003D4733 /* JMBaseLibTests */,
 				66959A482089718B003D4733 /* Products */,
+				351674E48C473A53F1870CE5 /* Pods */,
+				702BA8AD8FA90F55143043D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,7 +99,8 @@
 		66959A492089718B003D4733 /* JMBaseLib */ = {
 			isa = PBXGroup;
 			children = (
-				66959A62208976E9003D4733 /* JMTest.swift */,
+				66959AAE2089B74F003D4733 /* Common */,
+				66959AAD2089B4E7003D4733 /* Network */,
 				66959A61208976C9003D4733 /* Lib */,
 				66959A4A2089718B003D4733 /* JMBaseLib.h */,
 				66959A4B2089718B003D4733 /* Info.plist */,
@@ -94,8 +120,33 @@
 		66959A61208976C9003D4733 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				66959A62208976E9003D4733 /* JMTest.swift */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		66959AAD2089B4E7003D4733 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				66959AAB2089B4E0003D4733 /* JMRequestManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		66959AAE2089B74F003D4733 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		702BA8AD8FA90F55143043D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70E13F93B94259A64E95C6D4 /* Pods_JMBaseLib.framework */,
+				9D86307B1AD7FDDDB354F223 /* Pods_JMBaseLibTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66959A5B2089718B003D4733 /* Build configuration list for PBXNativeTarget "JMBaseLib" */;
 			buildPhases = (
+				BEB76A4FA7B6490D33FF367E /* [CP] Check Pods Manifest.lock */,
 				66959A422089718B003D4733 /* Sources */,
 				66959A432089718B003D4733 /* Frameworks */,
 				66959A442089718B003D4733 /* Headers */,
@@ -135,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66959A5E2089718B003D4733 /* Build configuration list for PBXNativeTarget "JMBaseLibTests" */;
 			buildPhases = (
+				BDDE9430A5DB34F9DDA66B8E /* [CP] Check Pods Manifest.lock */,
 				66959A4C2089718B003D4733 /* Sources */,
 				66959A4D2089718B003D4733 /* Frameworks */,
 				66959A4E2089718B003D4733 /* Resources */,
+				71B9F83DB0C508F694A333A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,11 +257,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		71B9F83DB0C508F694A333A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JMBaseLibTests/Pods-JMBaseLibTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JMBaseLibTests/Pods-JMBaseLibTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDDE9430A5DB34F9DDA66B8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JMBaseLibTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB76A4FA7B6490D33FF367E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JMBaseLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66959A422089718B003D4733 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66959AAC2089B4E0003D4733 /* JMRequestManager.swift in Sources */,
 				66959A63208976E9003D4733 /* JMTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +475,7 @@
 		};
 		66959A5C2089718B003D4733 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45B31EF73E010A83B3EDE2D /* Pods-JMBaseLib.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -365,11 +488,7 @@
 				INFOPLIST_FILE = JMBaseLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -381,6 +500,7 @@
 		};
 		66959A5D2089718B003D4733 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8734AD72A6200A85D86916 /* Pods-JMBaseLib.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -393,11 +513,7 @@
 				INFOPLIST_FILE = JMBaseLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -408,16 +524,13 @@
 		};
 		66959A5F2089718B003D4733 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1672C291EB5A2E2C9EF3FBB /* Pods-JMBaseLibTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNG24H8Q82;
 				INFOPLIST_FILE = JMBaseLibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLibTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -427,16 +540,13 @@
 		};
 		66959A602089718B003D4733 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BE6D786E378148E44DB409 /* Pods-JMBaseLibTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNG24H8Q82;
 				INFOPLIST_FILE = JMBaseLibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunlandGroup.JMBaseLibTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

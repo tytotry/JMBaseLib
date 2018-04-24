@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 public class JMTest: NSObject {
     public func Log(_ log: String) {

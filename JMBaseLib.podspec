@@ -133,7 +133,12 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "Alamofire", "~> 4.7.2"
+  s.dependency "PKHUD", "~> 5.0.0"
+  s.dependency "IHKeyboardAvoiding", "~> 4.2"
+  s.dependency "ObjectMapper", "~> 3.1.0"
+  s.dependency "SwiftyJSON", "~> 4.1.0"
+  s.dependency "TZImagePickerController", "~> 2.1.0.1"
 
   s.swift_version = '4.0'
 
