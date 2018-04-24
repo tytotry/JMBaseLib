@@ -10,9 +10,9 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-typealias SuccessBlock = (_ response: Any) -> Void
-typealias FailureBlock = (_ error: Error) -> Void
-typealias CompleteBlock = () -> Void
+public typealias SuccessBlock = (_ response: Any) -> Void
+public typealias FailureBlock = (_ error: Error) -> Void
+public typealias CompleteBlock = () -> Void
 
 public func join(_ baseUrl: String, path: String) -> String {
     return String(format: "%@%@", baseUrl, path)
@@ -35,7 +35,7 @@ extension Dictionary: MyParamters  {
 
 public class JMRequestManager: NSObject {
     @discardableResult
-    func myRequest<T>(
+    public func myRequest<T>(
         _ url: URLConvertible,
         method: HTTPMethod = .get,
         parameters: Parameters? = nil,
@@ -72,7 +72,7 @@ public class JMRequestManager: NSObject {
     }
     
     @discardableResult
-    func myRequestWithNoneSuccessIdentify<T>(
+    public func myRequestWithNoneSuccessIdentify<T>(
         _ url: URLConvertible,
         method: HTTPMethod = .get,
         parameters: Parameters? = nil,
@@ -106,7 +106,7 @@ public class JMRequestManager: NSObject {
     }
     
     @discardableResult
-    func myRequestWithNoneSuccessIdentifyWithUnknownObject(
+    public func myRequestWithNoneSuccessIdentifyWithUnknownObject(
         _ url: URLConvertible,
         method: HTTPMethod = .get,
         parameters: Parameters? = nil,
